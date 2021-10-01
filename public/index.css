@@ -1,0 +1,21 @@
+h1 {
+  font-size: 45px;
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.content {
+  display: inline-block;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.todo-title {
+  display: inline-block;
+  margin-left: 10px;
+}
