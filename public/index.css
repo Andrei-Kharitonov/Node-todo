@@ -5,6 +5,15 @@ h1 {
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+.todo form {
+  display: inline-block;
+}
+
+.todo .btn-outline-danger {
+  width: 100%;
 }
 
 .content {

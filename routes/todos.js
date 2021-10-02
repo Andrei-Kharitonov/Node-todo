@@ -37,4 +37,12 @@ router.post("/complete", async (req, res) => {
   res.redirect("/")
 })
 
+router.post("/delete", async (req, res) => {
+  let todo = await Todo.findById(req.body.id)
+
+  await todo.delete()
+
+  res.redirect("/")
+})
+
 module.exports = router
