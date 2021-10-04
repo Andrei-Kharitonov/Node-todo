@@ -4,22 +4,22 @@
 <ul class="">
   {{#each todos}}
   <li class="container todo">
-    <form class="col-9" action="/complete" method="POST">
+    <form class="col-sm-10 col-9" action="/complete" method="POST">
       {{#if completed}}
-      <div class="content col-9">
+      <div class="content col-sm-10 col-9">
         <input class="form-check-input" type="checkbox" name="completed" checked>
         <p class="todo-title" style="text-decoration: line-through;">{{title}}</p>
       </div>
       {{else}}
-      <div class="content col-9">
+      <div class="content col-sm-10 col-9">
         <input class="form-check-input" type="checkbox" name="completed">
         <p class="todo-title">{{title}}</p>
       </div>
       {{/if}}
       <input type="hidden" value="{{_id}}" name="id">
-      <button class="btn btn-primary btn-sm col-2" type="submit">Save</button>
+      <button class="btn btn-primary btn-sm col-sm-1 col-2" type="submit">Save</button>
     </form>
-    <form class="col-2" action="/delete" method="POST">
+    <form class="col-sm-1 col-2" action="/delete" method="POST">
       <input type="hidden" value="{{_id}}" name="id">
       <button class="btn btn-outline-danger btn-sm" type="submit">Delete</button>
     </form>
